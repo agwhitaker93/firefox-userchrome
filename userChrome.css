@@ -1,0 +1,12 @@
+.titlebar-spacer[type="pre-tabs"] {
+    display: none;
+}
+
+#tabbrowser-tabs {
+    --tab-min-width: 45px !important;
+}
+
+.tab-label-container[textoverflow][labeldirection=ltr]:not([pinned]),
+.tab-label-container[textoverflow]:not([labeldirection]):not([pinned]):-moz-locale-dir(ltr) {
+  mask-image: linear-gradient(to left, transparent, black 0.5em) !important;
+}
